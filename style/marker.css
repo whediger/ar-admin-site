@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+img {
+}
+
+.icon {
+  font-size: 4em;
+}
+label {
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 200px;
+  outline: none;
+  border: 0px;
+  background-color: rgba(0,0,0,.05);
+  height: 21px;
+  font-size: 15px;
+}
+
+aruco-marker {
+  margin-left: 25%;
+  margin-right: auto;
+}
+
+h4 {
+  margin-top: 200px;
+}

@@ -2,19 +2,30 @@
 <html ng-app="MarkerEditor">
   <head>
     <meta charset='utf-8'>
-    <title>Angular Marker Directive</title>
+    <title>Marker Maker</title>
+    <link rel="stylesheet" href="../style/marker.css" charset="utf-8">
+    <script src="https://use.fontawesome.com/fe7b22a8ea.js"></script>
   </head>
   <body>
-    <h1>Angular Aruco Directive</h1>
-
+    <img src="../galvanize-logo.svg" alt="galvanize logo" />
+    <div class="icon">
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+    </div>
     <div ng-controller="EditCtrl">
+      <h3>
+        To view content send a text to: 720.330.4080
+      </h3>
       <p>
+        <label for="location">Loction:
+          <input type="text" name="location">
+        </label>
         <label>Marker ID:
           <input type="number" min="0" max="1023" ng-model="markerId">
         </label>
       </p>
-      <aruco-marker marker-id="{{markerId}}" size="500px"/>
+      <aruco-marker marker-id="{{markerId}}" size="200px"/>
     </div>
+      <h4>This technology will not work with Apple Devices</h4>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
     <script src="../build/aruco-marker.js"></script>
